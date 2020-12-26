@@ -17,7 +17,7 @@
 
 - 다양한 클래스 변수들의 분포에 기반하여 데이터셋에 존재하는 노이즈의 양
 
-- <img src="https://latex.codecogs.com/svg.latex?GiniImpurity = \Sigma _{i=1} ^J p_i \cdot (1- p_i ) = 1  - \Sigma _{i=1} ^J p_i ^2"/>
+- <img src="https://latex.codecogs.com/svg.latex?GiniImpurity=\Sigma_{i=1}^{J}p_i\cdot(1-p_i)=1-\Sigma _{i=1}^{J}p_i^2"/>
 
     - J개의 클래스, i로 레이블링된 관측 비율 (pi)
 
@@ -27,13 +27,13 @@
     - unbiased 동전은 예측 불가능성이 최대이므로 엔트로피가 1
     - biased 동전이고 H 확률이 100%이면 엔트로피는 0
 - 특정 branch에서 클래스 변수의 예측 불가능성을 계산하는데 사용
-- <img src="https://latex.codecogs.com/svg.latex?H(T) = - \Sigma _ {i=1} ^J p_i log _2 p_i"/>
+- <img src="https://latex.codecogs.com/svg.latex?H(T)=-\Sigma_{i=1}^{J}p_i{log}_{2}{p_i}"/>
 
     - H(T) : 속성 T의 엔트로피
     - J : 데이터셋의 클래스 변수
     - pi : 데이터셋에서 클래스 i에 속하는 관측치의 비율
 
-- <img src="https://latex.codecogs.com/svg.latex?IG(T,a) = H(T) - H(T|a)"/>
+- <img src="https://latex.codecogs.com/svg.latex?IG(T,a)=H(T)-H(T|a)"/>
 
     - a : branch의 속성
     - H(T|a) : 자식들의 엔트로피 가중치 합
